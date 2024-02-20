@@ -19,17 +19,17 @@ body {
 
 @font-face {
     font-family: "Gellix";
-    src: url("../public/Gelix/Gellix-Regular.ttf");
+    src: url("/Gelix/Gellix-Regular.ttf");
 }
 
 @font-face {
     font-family: "Gellix-Bold";
-    src: url("../public/Gelix/Gellix-Bold.ttf");
+    src: url("/Gelix/Gellix-Bold.ttf");
 }
 
 @font-face {
     font-family: "Impact";
-    src: url("../public/Impact-Font/impact.ttf");
+    src: url("/Impact-Font/impact.ttf");
 }
 
 .header {
@@ -45,7 +45,7 @@ body {
     content: "";
     position: absolute;
     bottom: 0;
-    background: url(../public/Line.png) no-repeat center;
+    background: url("/Line.png") no-repeat center;
     width: 200vw;
     height: 5px;
 }
