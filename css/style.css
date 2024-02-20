@@ -57,7 +57,7 @@ body {
 .scrollText {
     text-align: center;
     font-family: "Impact";
-    font-size: 26rem;
+    font-size: 20rem;
     letter-spacing: 0.7rem;
     width: fit-content;
     white-space: nowrap;
@@ -144,13 +144,13 @@ body {
 }
 @media screen and (max-width: 1400px) {
     .scrollText {
-        font-size: 24rem;
+        font-size: 17rem;
     }
 }
 
 @media screen and (max-width: 1024px) {
     .scrollText {
-        font-size: 20rem;
+        font-size: 15rem;
     }
 }
 
@@ -184,7 +184,7 @@ body {
     .scrollText {
         width: 100vw;
         overflow: hidden;
-        font-size: 7.5rem;
+        font-size: 9rem;
         letter-spacing: 0.3rem;
         animation: scrollAnimation 7s linear infinite;
         text-shadow: 0 0 100px rgba(255, 255, 255, 0.4);
