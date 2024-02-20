@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-width: 0;
+}
+
+body {
+    background: #010001;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: #ffffff;
+}
+
+@font-face {
+    font-family: "Gellix";
+    src: url("../public/Gelix/Gellix-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Gellix-Bold";
+    src: url("../public/Gelix/Gellix-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Impact";
+    src: url("../public/Impact-Font/impact.ttf");
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem;
+    position: relative;
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    background: url(../public/Line.png) no-repeat center;
+    width: 200vw;
+    height: 5px;
+}
+
+.body {
+    width: 100%;
+}
+
+.scrollText {
+    text-align: center;
+    font-family: "Impact";
+    font-size: 26rem;
+    letter-spacing: 0.7rem;
+    width: fit-content;
+    white-space: nowrap;
+    animation: scrollAnimation 12s linear infinite;
+    text-shadow: 0 0 100px rgba(255, 255, 255, 0.3);
+}
+
+.scrollCon {
+    display: flex;
+    width: fit-content;
+    position: relative;
+}
+
+@keyframes scrollAnimation {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.subtitle {
+    font-family: "Gellix";
+    font-size: 1.4rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+    line-height: 2.5rem;
+    opacity: 0.7;
+    margin-top: 1rem;
+}
+
+.btn-con {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.btn-con>button {
+    border: none;
+    color: #000;
+    background-color: #ffeb02;
+    font-family: "Gellix-Bold";
+    padding-inline: 2.5rem;
+    padding-block: 1.2rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 0.3rem;
+}
+
+.footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 2rem;
+    padding-inline: 2rem;
+}
+
+.footer>h1 {
+    font-family: "Gellix";
+    font-size: 1.8rem;
+    opacity: 0.9;
+}
+
+.socials>a {
+    text-decoration: none;
+}
