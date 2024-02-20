@@ -63,6 +63,11 @@ body {
     white-space: nowrap;
     animation: scrollAnimation 12s linear infinite;
     text-shadow: 0 0 100px rgba(255, 255, 255, 0.3);
+
+    @supports (-webkit-appearance: none) {
+    text-shadow: 0 0 100px rgba(255, 255, 255, 0.1);
+
+    }
 }
 
 .scrollCon {
@@ -132,9 +137,97 @@ body {
     text-decoration: none;
 }
 
-.socials > a > img {
+.socials>a>img {
     width: 2.5rem;
     height: 2.5rem;
     cursor: pointer;
 }
+@media screen and (max-width: 1400px) {
+    .scrollText {
+        font-size: 24rem;
+    }
+}
 
+@media screen and (max-width: 1024px) {
+    .scrollText {
+        font-size: 20rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        height: 100svh;
+        width: 100vw;
+        overflow: hidden !important;
+    }
+
+    body {
+        height: 100svh;
+        width: 100vw;
+        overflow: hidden !important;
+    }
+
+    .header {
+        padding: 0.5rem;
+    }
+
+    .header>img {
+        height: 3rem;
+    }
+
+    .header::before {
+        background: url("/Line.png") no-repeat center;
+        background-size: 60% 50%;
+    }
+
+
+    .scrollText {
+        width: 100vw;
+        overflow: hidden;
+        font-size: 3rem;
+        letter-spacing: 0.3rem;
+        animation: scrollAnimation 7s linear infinite;
+        text-shadow: 0 0 100px rgba(255, 255, 255, 0.4);
+    }
+
+    .subtitle {
+        font-size: 0.8rem;
+        letter-spacing: 0.2rem;
+        line-height: 1.5rem;
+        padding-inline: 1rem;
+    }
+
+    .br-tag {
+        display: none;
+    }
+
+    .btn-con {
+        margin-top: 1rem;
+    }
+
+    .btn-con>button {
+        padding-inline: 1.2rem;
+        padding-block: 0.5rem;
+        font-size: 1rem;
+    }
+
+    .footer {
+        padding-bottom: 1rem;
+        padding-inline: 1rem;
+        justify-content: center;
+    }
+
+    .footer>h1 {
+        font-size: 1.2rem;
+    }
+    
+    .socials {
+        display: flex;
+        gap: 0.5rem;
+    }
+
+    .socials>a>img {
+        width: 2rem;
+        height: 2rem;
+    }
+}
