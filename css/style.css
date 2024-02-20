@@ -65,8 +65,7 @@ body {
     text-shadow: 0 0 100px rgba(255, 255, 255, 0.3);
 
     @supports (-webkit-appearance: none) {
-    text-shadow: 0 0 100px rgba(255, 255, 255, 0.1);
-
+        text-shadow: 0 0 100px rgba(255, 255, 255, 0.1);
     }
 }
 
@@ -142,15 +141,31 @@ body {
     height: 2.5rem;
     cursor: pointer;
 }
+
 @media screen and (max-width: 1400px) {
     .scrollText {
         font-size: 17rem;
+    }
+
+    .subtitle {
+        padding-inline: 2rem;
+    }
+
+    .br-tag {
+        display: none;
     }
 }
 
 @media screen and (max-width: 1024px) {
     .scrollText {
         font-size: 15rem;
+    }
+    .subtitle {
+        padding-inline: 2rem;
+        font-size: 1.2rem;
+    }
+    .br-tag {
+        display: none;
     }
 }
 
@@ -179,7 +194,6 @@ body {
         background: url("/Line.png") no-repeat center;
         background-size: 60% 50%;
     }
-
 
     .scrollText {
         width: 100vw;
@@ -220,7 +234,7 @@ body {
     .footer>h1 {
         font-size: 1.2rem;
     }
-    
+
     .socials {
         display: flex;
         gap: 0.5rem;
