@@ -184,7 +184,7 @@ body {
     .scrollText {
         width: 100vw;
         overflow: hidden;
-        font-size: 3rem;
+        font-size: 7.5rem;
         letter-spacing: 0.3rem;
         animation: scrollAnimation 7s linear infinite;
         text-shadow: 0 0 100px rgba(255, 255, 255, 0.4);
