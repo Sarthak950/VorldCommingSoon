@@ -57,13 +57,13 @@ body {
 .scrollText {
     text-align: center;
     font-family: "Impact";
-    font-size: 20rem;
-    letter-spacing: 0.7rem;
+    font-size: 15vw;
+    letter-spacing: 0.7vw;
     width: fit-content;
     white-space: nowrap;
     animation: scrollAnimation 12s linear infinite;
     text-shadow: 0 0 100px rgba(255, 255, 255, 0.3);
-
+    
     @supports (-webkit-appearance: none) {
         text-shadow: 0 0 100px rgba(255, 255, 255, 0.1);
     }
@@ -71,19 +71,20 @@ body {
 
 .scrollCon {
     display: flex;
+    overflow: hidden;
     width: fit-content;
     position: relative;
 }
 
 @keyframes scrollAnimation {
     0% {
-        transform: translateX(0%);
+        transform: translateX(100%);
     }
-
     100% {
-        transform: translateX(-100%);
+        transform: translateX(-100%); /* Adjust this value as needed */
     }
 }
+
 
 .subtitle {
     font-family: "Gellix";
@@ -185,7 +186,9 @@ body {
     .header {
         padding: 0.5rem;
     }
-
+    .scrollCon .scrollText {
+        animation: scrollAnimation 10s linear infinite;
+    }
     .header>img {
         height: 3rem;
     }
@@ -196,7 +199,7 @@ body {
     }
 
     .scrollText {
-        width: 100vw;
+        width: fit-content;
         overflow: hidden;
         font-size: 9rem;
         letter-spacing: 0.3rem;
