@@ -62,11 +62,8 @@ body {
     width: fit-content;
     white-space: nowrap;
     animation: scrollAnimation 12s linear infinite;
-    text-shadow: 0 0 100px rgba(255, 255, 255, 0.3);
     
-    @supports (-webkit-appearance: none) {
-        text-shadow: 0 0 100px rgba(255, 255, 255, 0.1);
-    }
+  
 }
 
 .scrollCon {
@@ -204,7 +201,6 @@ body {
         font-size: 9rem;
         letter-spacing: 0.3rem;
         animation: scrollAnimation 7s linear infinite;
-        text-shadow: 0 0 100px rgba(255, 255, 255, 0.4);
     }
 
     .subtitle {
